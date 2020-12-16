@@ -2,6 +2,7 @@
 require 'irb/completion'
 require 'irb/ext/save-history'
 
+MY_EMAIL_ADDRESS = 'hello@michaelkoper.com'
 IRB.conf[:SAVE_HISTORY] = 10000000
 # IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 #
@@ -15,7 +16,7 @@ class Object
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
 
-  def find_ben
-    User.find_by_email 'ben@thoughtbot.com'
+  def find_me
+    User.find_by_email MY_EMAIL_ADDRESS
   end
 end
