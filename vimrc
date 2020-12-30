@@ -35,6 +35,8 @@ let g:UltiSnipsEditSplit="vertical"
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+let mapleader = ","
+
 
 " ========================================================================
 " Ruby stuff
@@ -54,7 +56,7 @@ augroup END
 
 " Rspec
 map <Leader>t :w<cr>:call RunCurrentSpecFile()<CR>
-map <Leader>s :w<cr>:call RunNearestSpec()<CR>
+map <Leader>r :w<cr>:call RunNearestSpec()<CR>
 map <Leader>l :w<cr>:call RunLastSpec()<CR>
 map <Leader>a :w<cr>:call RunAllSpecs()<CR>
 let g:rspec_command = "!clear && bin/rspec {spec}"
@@ -62,8 +64,6 @@ let g:rspec_command = "!clear && bin/rspec {spec}"
 " Enable built-in matchit plugin
 runtime macros/matchit.vim
 " ================
-
-let mapleader = ","
 
 imap jj <esc>
 map <Leader>ac :sp app/controllers/application_controller.rb<cr>
@@ -218,14 +218,6 @@ set timeoutlen=500
 
 " Set gutter background to black
 highlight SignColumn ctermbg=black
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" STOP USING ARROW KEYS
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Left> :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up> :echo "no!"<cr>
-map <Down> :echo "no!"<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RENAME CURRENT FILE (thanks Gary Bernhardt)

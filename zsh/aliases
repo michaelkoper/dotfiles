@@ -8,9 +8,11 @@ fi
 
 alias aliases='vim ~/.dotfiles/zsh/aliases'
 alias reload_aliases='. ~/.dotfiles/zsh/aliases'
+alias functions='vim ~/.dotfiles/zsh/functions'
+alias reload_functions='. ~/.dotfiles/zsh/functions'
 
 
-alias gaa='git add --all .'
+alias gaa='git add --all'
 alias gamend='git commit -v --amend'
 alias gb='git branch'
 alias gca='git commit -a'
@@ -22,6 +24,7 @@ alias gs='git status'
 alias gp='git push'
 alias gpr='git pull --rebase'
 alias squash='git rebase -i master'
+alias master='git checkout master'
 
 alias gx='gitx'
 alias r='rspec'
