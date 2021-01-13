@@ -25,6 +25,8 @@ alias gp='git push'
 alias gpr='git pull --rebase'
 alias squash='git rebase -i master'
 alias master='git checkout master'
+alias gstash='git add . ; git stash'
+alias gpop='git stash pop'
 
 alias gx='gitx'
 alias r='rspec'
