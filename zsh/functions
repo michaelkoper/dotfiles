@@ -2,15 +2,6 @@ c() { cd ~/code/$1; }
 _c() { _files -W ~/code -/; }
 compdef _c c
 
-function git-new-remote-tracking {
-  git checkout -b $1 && git push -u origin $1
-}
-
-function git-nuke {
-  git branch -D $1 && git push origin :$1
-}
-compdef _git git-nuke=git-checkout
-
 function g {
   if [[ $# > 0 ]]; then
     git $@

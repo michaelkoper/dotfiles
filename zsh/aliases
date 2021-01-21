@@ -11,7 +11,6 @@ alias reload_aliases='. ~/.dotfiles/zsh/aliases'
 alias functions='vim ~/.dotfiles/zsh/functions'
 alias reload_functions='. ~/.dotfiles/zsh/functions'
 
-
 alias gaa='git add --all'
 alias gamend='git commit -v --amend'
 alias gb='git branch'
