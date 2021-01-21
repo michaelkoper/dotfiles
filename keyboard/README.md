@@ -1,4 +1,4 @@
-This directory contains the layout files for my keyboard. Currently using the Moonlander keyboard.
+This directory contains the layout files for my keyboard. Currently using the [Moonlander](https://www.zsa.io/moonlander/) keyboard.
 
 ## Moonlander
 
