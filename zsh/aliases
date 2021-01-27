@@ -28,10 +28,12 @@ alias gstash='git add . ; git stash'
 alias gpop='git stash pop'
 
 alias gx='gitx'
-alias r='rspec'
+alias r='bundle exec rspec'
 alias b='bundle'
 alias m='middleman'
 alias cop='rubocop'
+alias sidekiq='bundle exec sidekiq'
+alias restart='touch tmp/restart.txt'
 
 alias drop='cd ~/Dropbox'
 alias dropnotes='drop ; cd notes'
@@ -47,6 +49,7 @@ alias nusii-landing='c landing_pages/nusii-landing ; vim .'
 alias puma_log="tail -f -n100 ~/Library/Logs/puma-dev.log"
 alias fix_postgresql="rm /usr/local/var/postgres/postmaster.pid"
 alias start_postgresql="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias fix_ffi="gem install ffi -- --disable-system-libffi"
 
 # Heroku staging
 alias staging-console='heroku run console --remote staging'
