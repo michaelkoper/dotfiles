@@ -23,6 +23,7 @@ stty stop undef
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/prompt
+source $HOME/.dotfiles/zsh/environment
 
 # Add cabal bin
 export PATH=$PATH:~/.cabal/bin
