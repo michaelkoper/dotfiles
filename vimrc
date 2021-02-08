@@ -77,7 +77,7 @@ map <Leader>, <C-^>
 " ========================================================================
 " Personal stuff
 " ========================================================================
-map <Leader>cn :e ~/Dropbox/notes/coding-notes.txt<cr>
+map <Leader>cn :e ~/Dropbox/notes/coding-notes.md<cr>
 map <Leader>dr :e ~/Dropbox<cr>
 map <Leader>dj :e ~/Dropbox/notes/journal.txt<cr>
 map <Leader>dt :e ~/Dropbox/notes/tweets.txt<cr>
