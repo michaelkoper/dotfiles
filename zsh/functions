@@ -11,7 +11,7 @@ function g {
 }
 
 function rrg {
-  bin/rake routes | grep $1
+  bin/rails routes | grep $1
 }
 
 function take {
