@@ -40,6 +40,9 @@ export PATH=$PATH:/usr/local/bin
 # Add stack's bin
 export PATH=$PATH:~/.local/bin
 
+# Add rustc
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Update hombrew once a week
 export HOMEBREW_AUTO_UPDATE_SECS=600000
 
