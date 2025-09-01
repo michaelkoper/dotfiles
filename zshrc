@@ -51,3 +51,12 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # Load rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Added by Windsurf
+export PATH="/Users/michael/.codeium/windsurf/bin:$PATH"
+
+# Unset LIBRARY_PATH because it makes installing rubies with rbenv fail
+# See: https://github.com/rbenv/ruby-build/discussions/2282
+unset LIBRARY_PATH
+
+alias claude="/Users/michael/.claude/local/claude"

@@ -1,6 +1,6 @@
 [user]
 	name = Michael Koper
-	email = michaelkoper@gmail.com
+	email = hello@michaelkoper.com
 [alias]
 	co = checkout
         cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
@@ -15,6 +15,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim --noplugin
+	whitespace = trailing-space
 [apply]
 	whitespace = nowarn
 
@@ -35,3 +36,5 @@
         ff = only
 [fetch]
         prune = true
+[init]
+	defaultBranch = main
