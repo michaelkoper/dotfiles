@@ -79,3 +79,4 @@ alias dev='bin/dev'
 alias standr='bundle exec standardrb --fix'
 
 alias bro='brew'
+alias dotfiles='cd ~/.dotfiles'
