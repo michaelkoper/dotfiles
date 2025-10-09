@@ -24,3 +24,12 @@ function gc {
   git commit -m "$*"
 }
 
+gcor() {
+  local branch=$(git branch | grep "$1" | head -n 1 | tr -d " *")
+  if [ -n "$branch" ]; then
+    git checkout "$branch"
+  else
+    echo "No branch found matching: $1"
+    return 1
+  fi
+}
