@@ -34,6 +34,12 @@ gcor() {
   fi
 }
 
-gcof() {
-  git checkout $(git branch --format='%(refname:short)' | fzf)
+gcof () {
+  local branch=$(git branch --format='%(refname:short)' | fzf --height 40% --reverse | tr -d '[:space:]')
+  if [ -n "$branch" ]; then
+    git checkout "$branch"
+  else
+    echo "No branch found matching: $1"
+    return 1
+  fi
 }
