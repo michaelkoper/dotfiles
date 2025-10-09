@@ -77,3 +77,5 @@ alias prod-push='production-push'
 alias nr='ngrok http --domain=nusii.ngrok.dev 3000'
 alias dev='bin/dev'
 alias standr='bundle exec standardrb --fix'
+
+alias bro='brew'
