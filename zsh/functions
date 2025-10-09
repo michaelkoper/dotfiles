@@ -33,3 +33,7 @@ gcor() {
     return 1
   fi
 }
+
+gcof() {
+  git checkout $(git branch --format='%(refname:short)' | fzf)
+}
