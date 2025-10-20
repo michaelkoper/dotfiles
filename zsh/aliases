@@ -27,6 +27,7 @@ alias master='git checkout master'
 alias main='git checkout main'
 alias gstash='git add . ; git stash'
 alias gpop='git stash pop'
+alias gresent='git branch --sort=-committerdate | head -20'
 
 alias gx='gitx'
 alias r='bundle exec rspec'
