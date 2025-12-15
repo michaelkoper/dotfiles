@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 require 'irb/completion'
-require 'irb/ext/save-history'
+# require 'irb/ext/save-history'
 
 MY_EMAIL_ADDRESS = 'hello@michaelkoper.com'
 IRB.conf[:SAVE_HISTORY] = 10000000
