@@ -1,8 +1,7 @@
 #!/usr/bin/ruby
 require 'irb/completion'
-# require 'irb/ext/save-history'
 
-MY_EMAIL_ADDRESS = 'hello@michaelkoper.com'
+MY_EMAIL_ADDRESS = 'hello' + "repokleahcim@".reverse + '.com' # 😂
 IRB.conf[:SAVE_HISTORY] = 10000000
 # IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
 #
@@ -17,7 +16,7 @@ class Object
   end
 
   def find_me
-    User.find_by_email MY_EMAIL_ADDRESS
+    User.find_by email: MY_EMAIL_ADDRESS
   end
 end
 
